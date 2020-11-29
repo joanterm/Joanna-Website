@@ -1,35 +1,61 @@
 * {
     box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-image: url("Background\ Pic\ Portfolio.jpeg");
-    background-size: cover;
-    height: 100vh;
+/* TYPOGRAPHY */
+h1 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+}
 
+
+header {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 77, 106, 0.4)), url("daniele-levis-pelusi-unsplashunsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* NAVIGATION SECTION */
+.nav-container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 1em; /*how far nav-container from top*/
+    display: flex;
+    justify-content: space-between;
 }
 
 nav {
-    background-color: grey;
-    padding: 0.10em;
-
+    /* border: 3px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
     padding: 0;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* border: 3px solid red; */
 }
 
 nav li {
-    margin-left: 5em;
-    border: 3px solid pink;
-    padding: 1em 4em;
+    margin-left: 5em; /*space between nav links*/
+    padding: 0.5em 1em; /*thickness of nav buttons*/
+    /* border: 3px solid green; */
+    border: 1px solid black;
+    border-radius: 50px;
+}
 
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.25rem;
+    /* padding: .25em 0; */
 }
