@@ -4,10 +4,31 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* TYPOGRAPHY */
 h1 {
     font-size: 4rem;
     letter-spacing: 10px;
+}
+
+.my-name {
+    font-family: 'Courgette', cursive;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.sub-text {
+    font-size: 0.75rem;
 }
 
 
@@ -15,7 +36,8 @@ header {
     background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 77, 106, 0.4)), url("daniele-levis-pelusi-unsplashunsplash.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 /* NAVIGATION SECTION */
@@ -59,3 +81,36 @@ nav a {
     font-size: 1.25rem;
     /* padding: .25em 0; */
 }
+
+
+
+/* THIS AREA NEEDS FIXING!!!! */
+.name-area {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 15em;
+    text-align: center;
+    
+
+
+}
+
+.bottom-area {
+    padding-top: 10rem;
+    text-align: center;
+
+}
+
+.bottom-text {
+    letter-spacing: 20px;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 500px) {
+    .name-area {
+        margin-top: 1em;
+    }
+}
+
