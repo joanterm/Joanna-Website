@@ -6,7 +6,13 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+
 }
+
+/* img {
+    width: 80px;
+    height: 100px;
+} */
 
 /* TYPOGRAPHY */
 h1 {
@@ -18,9 +24,11 @@ h1 {
     font-family: 'Courgette', cursive;
     font-size: 5rem;
     margin-bottom: 1rem;
+    letter-spacing: 10px;  	
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
-p {
+.my-title {
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -31,12 +39,21 @@ p {
     font-size: 0.75rem;
 }
 
+p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.lets-meet {
+    margin: 3em;
+}
+
 
 header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 77, 106, 0.4)), url("daniele-levis-pelusi-unsplashunsplash.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 102, 128, 0.6)), url("Images/evieshaffer.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -48,6 +65,7 @@ header {
     padding-top: 1em; /*how far nav-container from top*/
     display: flex;
     justify-content: space-between;
+
 }
 
 nav {
@@ -99,12 +117,14 @@ nav a {
 .bottom-area {
     padding-top: 10rem;
     text-align: center;
-
 }
 
 .bottom-text {
     letter-spacing: 20px;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    
 }
 
 
@@ -114,3 +134,10 @@ nav a {
     }
 }
 
+.about-me {
+    margin: 0 auto;
+    /* max-width: 800px; */
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
