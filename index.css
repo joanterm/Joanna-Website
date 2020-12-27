@@ -10,6 +10,8 @@ body {
     text-align: center;
 }
 
+/* TYPOGRAPHY */
+
 h1 {
     font-size: 4rem;
     letter-spacing: 10px;
@@ -51,6 +53,7 @@ p {
     padding: 3em;
 }
 
+/* HEADER */
 
 header {
     background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 102, 128, 0.6)), url("Images/evieshaffer.jpg");
@@ -59,7 +62,9 @@ header {
     min-height: 100vh;
 }
 
+
 /* NAVIGATION SECTION */
+
 .nav-container {
     width: 90%;
     max-width: 1500px;
@@ -70,7 +75,6 @@ header {
 }
 
 nav {
-    /* border: 3px solid yellow; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,15 +86,12 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    /* border: 3px solid red; */
 }
 
 nav li {
     margin-left: 5em; /*space between nav links*/
     padding: 0.5em; /*thickness of nav buttons*/
-    /* border: 3px solid green; */
     border-bottom: 2px solid #290a0a;
-    /* border-radius: 50px; */
 }
 
 nav a {
@@ -104,10 +105,8 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #ff6680;
-
+    color: #ffb3c1;
 }
-
 
 
 
@@ -124,15 +123,17 @@ nav a:focus {
 }
 
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .name-area {
         margin-top: 1em;
     }
-}
+} */
+
 
 .about {
     background-color: #fcf6f5;
 }
+
 .about-me {
     margin: 0 auto;
     /* max-width: 800px; */
@@ -144,22 +145,10 @@ nav a:focus {
 
 
 
-/* FORM AREA */
 
+/* FORM AREA WITH ITS TYPOGRAPHY */
 .form-area {
-    background-color: #ffe6e9; 
-    padding-bottom: 2em;
-}
-
-.smedia-icons {
-    margin-bottom: 2em;
-}
-
-input,
-.submit-btn {
-    border-radius: 50px;
-    border: 0;
-    outline: none;
+    background-color: #a7a0ab;
 }
 
 form {
@@ -168,34 +157,58 @@ form {
     max-width: 400px;
     margin: 0 auto;
     width: 90%; 
+}
 
+.form-text {
+    padding-top: 3em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.smedia-icons {
+    margin: 3em;
+} 
+
+input,
+textarea {
+    border-radius: 50px;
+    border: 0;
+    outline: none;
 }
 
 input {
     margin-bottom: 3em;
+    padding: 2em;
     text-align: inherit;
-    padding: 2em;
-
-}
-
-.message-area {
-    padding: 8em;
-
-}
-
-.form-text {
-    padding: 2em;
-    text-transform: uppercase;
-    font-weight: 500;
-    
+    font-family: inherit;
+    font-weight: 500; 
 }
 
 .submit-btn {
     margin: 0 auto;
     text-transform: uppercase;
+    font-weight: 700;
     letter-spacing: 1px;
     padding: 1em 2em;
     cursor: pointer;
-    background-color: #bfbfbf;
-    border-radius: 0px;
+    background-color: #756c7a;
+    color: #fcf6f5;
+    border: 0;
+    outline: none;
+    margin-bottom: 4em;
+}  
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #ffb3c1;
+    color: #290a0a;
+    font-weight: 700;
+}
+
+textarea {
+    height: 250px;
+    resize: none;
+    padding: 2em;
+    margin-bottom: 3em;
+    font-family: inherit;
 }
