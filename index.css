@@ -6,15 +6,10 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-
+    color: #290a0a;
+    text-align: center;
 }
 
-/* img {
-    width: 80px;
-    height: 100px;
-} */
-
-/* TYPOGRAPHY */
 h1 {
     font-size: 4rem;
     letter-spacing: 10px;
@@ -36,7 +31,14 @@ h1 {
 }
 
 .sub-text {
-    font-size: 0.75rem;
+    font-size: 1rem;
+}
+
+.bottom-text {
+    letter-spacing: 8px;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);    
 }
 
 p {
@@ -46,7 +48,7 @@ p {
 }
 
 .lets-meet {
-    margin: 3em;
+    padding: 3em;
 }
 
 
@@ -65,7 +67,6 @@ header {
     padding-top: 1em; /*how far nav-container from top*/
     display: flex;
     justify-content: space-between;
-
 }
 
 nav {
@@ -86,19 +87,27 @@ nav ul {
 
 nav li {
     margin-left: 5em; /*space between nav links*/
-    padding: 0.5em 1em; /*thickness of nav buttons*/
+    padding: 0.5em; /*thickness of nav buttons*/
     /* border: 3px solid green; */
-    border: 1px solid black;
-    border-radius: 50px;
+    border-bottom: 2px solid #290a0a;
+    /* border-radius: 50px; */
 }
 
 nav a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: #290a0a;
+    font-weight: 500;
     font-size: 1.25rem;
     /* padding: .25em 0; */
 }
+
+nav a:hover,
+nav a:focus {
+    color: #ff6680;
+
+}
+
 
 
 
@@ -108,23 +117,10 @@ nav a {
     max-width: 1500px;
     margin: 0 auto;
     margin-top: 15em;
-    text-align: center;
-    
-
-
 }
 
 .bottom-area {
     padding-top: 10rem;
-    text-align: center;
-}
-
-.bottom-text {
-    letter-spacing: 20px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-    
 }
 
 
@@ -134,10 +130,72 @@ nav a {
     }
 }
 
+.about {
+    background-color: #fcf6f5;
+}
 .about-me {
     margin: 0 auto;
     /* max-width: 800px; */
     text-align: center;
     width: 90%;
     max-width: 1200px;
+    padding-bottom: 6em;
+}
+
+
+
+/* FORM AREA */
+
+.form-area {
+    background-color: #ffe6e9; 
+    padding-bottom: 2em;
+}
+
+.smedia-icons {
+    margin-bottom: 2em;
+}
+
+input,
+.submit-btn {
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;  
+    max-width: 400px;
+    margin: 0 auto;
+    width: 90%; 
+
+}
+
+input {
+    margin-bottom: 3em;
+    text-align: inherit;
+    padding: 2em;
+
+}
+
+.message-area {
+    padding: 8em;
+
+}
+
+.form-text {
+    padding: 2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
+.submit-btn {
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1em 2em;
+    cursor: pointer;
+    background-color: #bfbfbf;
+    border-radius: 0px;
 }
