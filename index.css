@@ -42,9 +42,7 @@ body {
 
 .bottom-author {
     font-size: 1rem;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 0.75em;
+    text-align: center;
    
 }
 
@@ -131,7 +129,7 @@ nav a:focus {
 
 .bottom-area {
     padding-top: 5rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
