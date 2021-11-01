@@ -13,7 +13,7 @@ body {
 
 /* TYPOGRAPHY */
 h2 {
-    border-left: 10px solid pink;
+    border-left: 10px solid #e60073;
     padding-left: 10px;
     margin-bottom: 2em;
 }
@@ -23,12 +23,14 @@ h2 {
     font-family: inherit;
     font-weight: 400;
     font-size: 4rem;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
+    color: #e60073;
+    text-shadow: 2px 4px 3px rgba(226, 216, 216, 0.2);
 }
 
 .my-title {
     font-size: 1.5rem;
     font-weight: 400;
+    color: whitesmoke;
     text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
 }
 
@@ -47,9 +49,8 @@ h2 {
 } */
 
 p {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    line-height: 1.6;
+    font-size: 1.25rem;
+
 }
 
 /* .lets-meet {
@@ -60,11 +61,12 @@ p {
 /* HEADER */
 
 header {
-    background-image: linear-gradient(rgba(226, 217, 217, 0.1),rgba(192, 32, 125, 0.5)), url("Images/evieshaffer.jpg");
+    /* background-image: linear-gradient(rgba(226, 217, 217, 0.1),rgba(192, 32, 125, 0.5)), url("Images/evieshaffer.jpg"); */
     background-size: cover;
     background-position: center;
     min-height: 90vh;
     background-attachment: fixed;
+    background-image: url("https://images.unsplash.com/photo-1610303871783-491dc6d0a165?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
 
 }
 
@@ -97,13 +99,14 @@ nav ul {
 nav li {
     margin-left: 5em; /*space between nav links*/
     padding: 0.5em; /*thickness of nav buttons*/
-    border-bottom: 2px solid #290a0a;
+    border-bottom: 2px solid #e60073;
 }
 
 nav a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #290a0a;
+    /* color: #290a0a; */
+    color: #e60073;
     font-weight: 500;
     font-size: 1.25rem;
     /* padding: .25em 0; */
@@ -111,7 +114,8 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #ffb3c1;
+    /* color: #ffb3c1; */
+    color: white;
 }
 
 
@@ -124,7 +128,7 @@ nav a:focus {
     background-color: rgba(245, 245, 245, 0.2);
     border-radius: 10px;
     box-shadow: 0 5px 15px 0 rgba(245, 245, 245, 0.3);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
     border: 2px solid transparent;
     text-align: center;
     margin-top: 5em;
@@ -263,6 +267,8 @@ textarea {
 .work {
     border: 3px solid black;
     padding: 5em 0 5em 0;
+    /* background-color: #faedfa; */
+    background-color: #faedfa;
 }
 .work-info {
     width: 1000px;
