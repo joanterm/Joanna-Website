@@ -12,6 +12,11 @@ body {
 }
 
 /* TYPOGRAPHY */
+h2 {
+    border-left: 10px solid pink;
+    padding-left: 10px;
+    margin-bottom: 2em;
+}
 
 
 .my-name {
@@ -47,15 +52,15 @@ p {
     line-height: 1.6;
 }
 
-.lets-meet {
+/* .lets-meet {
     padding-top: 4em;
     padding-bottom: 2em;
-}
+} */
 
 /* HEADER */
 
 header {
-    background-image: linear-gradient(rgba(226, 217, 217, 0.1),rgba(116, 47, 57, 0.5)), url("Images/evieshaffer.jpg");
+    background-image: linear-gradient(rgba(226, 217, 217, 0.1),rgba(192, 32, 125, 0.5)), url("Images/evieshaffer.jpg");
     background-size: cover;
     background-position: center;
     min-height: 90vh;
@@ -114,7 +119,7 @@ nav a:focus {
 /* THIS AREA NEEDS FIXING!!!! */
 .name-area {
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: rgba(245, 245, 245, 0.2);
     border-radius: 10px;
@@ -145,16 +150,18 @@ nav a:focus {
 } */
 
 
-.about {
-    background-color: #fcf6f5;
-}
-
 .about-me {
-    width: 90%;
-    max-width: 800px;
-    padding-bottom: 6em;
+    background-color: white;
+    border: 3px solid gold;
+    padding: 5em 0 5em 0;
 }
 
+.about-me-info {
+    border: 3px solid teal;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
 
 
 
@@ -223,4 +230,33 @@ textarea {
     padding: 2em;
     margin-bottom: 3em;
     font-family: inherit;
+}
+
+.skill-icons {
+    border: 3px solid pink;
+    max-width: 1000px;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon {
+    border: 3px solid fuchsia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    padding: 30px;
+    margin: 10px;
+}
+.img-icon {
+    border: 3px solid tomato;
+    width: 50px;
+}
+
+@media screen and (max-width: 780px) {
 }
