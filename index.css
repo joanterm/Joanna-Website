@@ -253,6 +253,45 @@ textarea {
     padding: 30px;
     margin: 10px;
 }
+.my-work {
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.work {
+    border: 3px solid black;
+    padding: 5em 0 5em 0;
+}
+.work-info {
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    border: 3px solid greenyellow;
+}
+.coded-projects {
+    border: 3px solid rosybrown;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.cocktail-recipe {
+    border: 3px solid blue;
+    width: 400px;
+    padding: 30px;
+    margin: 20px;
+}
+.cocktail-img {
+    width: 100%;
+}
+
 .img-icon {
     border: 3px solid tomato;
     width: 50px;
