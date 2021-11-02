@@ -16,6 +16,12 @@ h2 {
     border-left: 10px solid #e60073;
     padding-left: 10px;
     margin-bottom: 2em;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-bottom: 0.25em;
 }
 
 
@@ -49,7 +55,7 @@ h2 {
 } */
 
 p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 
 }
 
@@ -156,12 +162,11 @@ nav a:focus {
 
 .about-me {
     background-color: white;
-    border: 3px solid gold;
     padding: 5em 0 5em 0;
 }
 
 .about-me-info {
-    border: 3px solid teal;
+    max-width: 90%;
     width: 1000px;
     margin: 0 auto;
     padding-bottom: 2em;
@@ -237,7 +242,6 @@ textarea {
 }
 
 .skill-icons {
-    border: 3px solid pink;
     max-width: 1000px;
     width: 90%;
     height: 90%;
@@ -248,7 +252,6 @@ textarea {
 }
 
 .icon {
-    border: 3px solid fuchsia;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,20 +268,17 @@ textarea {
 }
 
 .work {
-    border: 3px solid black;
     padding: 5em 0 5em 0;
-    /* background-color: #faedfa; */
-    background-color: #faedfa;
+    background-color: #d9d9d9;
 }
 .work-info {
     width: 1000px;
     max-width: 90%;
     margin: 0 auto;
     padding-bottom: 2em;
-    border: 3px solid greenyellow;
 }
-.coded-projects {
-    border: 3px solid rosybrown;
+
+.projects-section {
     max-width: 1000px;
     width: 90%;
     margin: 0 auto;
@@ -286,20 +286,92 @@ textarea {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    padding-bottom: 2em;
 }
 
-.cocktail-recipe {
-    border: 3px solid blue;
+.project-name {
+    font-weight: 600;
+    margin-top: 0.5em;
+}
+
+.project-buttons { 
+    padding-top: 0.5em;
+}
+
+.live-btn,
+.code-btn {
+    border: 2px solid #e60073;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.1)
+}
+
+.live-btn:hover,
+.live-btn:focus,
+.code-btn:hover,
+.code-btn:focus {
+    background-color: #333333;
+}
+
+.code-btn:hover,
+.code-btn:focus {
+    color: white;
+}
+
+#wordpress-project-buttons {
+    margin: 0.5em 0;
+}
+
+
+.live-btn {
+    margin-right: 0.5em;
+    background-color: #e60073;
+    color: white;
+}
+
+.code-btn {
+    background-color:#cccccc;
+    color: #262626;
+}
+
+
+
+.stack-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0.5em 0;
+}
+
+.stack-description {
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    font-weight: 500;
+
+}
+
+.project-description,
+.stack-description {
+    font-size: 0.75rem;
+}
+
+.project-card {
     width: 400px;
     padding: 30px;
     margin: 20px;
+    background-color: #cccccc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2) 
 }
+
 .cocktail-img {
     width: 100%;
 }
 
 .img-icon {
-    border: 3px solid tomato;
     width: 50px;
 }
 
