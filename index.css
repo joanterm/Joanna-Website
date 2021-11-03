@@ -175,8 +175,8 @@ nav a:focus {
 
 
 /* FORM AREA WITH ITS TYPOGRAPHY */
-.form-area {
-    background-color: #a7a0ab;
+.form {
+    padding: 5em 0 5em 0;
 }
 
 form {
@@ -187,14 +187,31 @@ form {
     width: 90%; 
 }
 
-.form-text {
-    padding-top: 3em;
-    text-transform: uppercase;
-    font-weight: 500;
+.form-text-top {
+    text-align: center;
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    font-weight: 700;
+}
+.form-text-bottom {
+    /* padding-top: 3em; */
+    text-align: center;
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
 }
 
 .smedia-icons {
-    margin: 3em;
+    /* margin: 3em; */
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5em;
 } 
 
 input,
@@ -202,6 +219,7 @@ textarea {
     border-radius: 50px;
     border: 0;
     outline: none;
+    background-color:#e60073;
 }
 
 input {
@@ -210,27 +228,41 @@ input {
     text-align: inherit;
     font-family: inherit;
     font-weight: 500; 
+
+}
+
+::placeholder {
+    color: white !important;
 }
 
 .submit-btn {
     margin: 0 auto;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    /* font-weight: 700;
     padding: 1em 2em;
     cursor: pointer;
     background-color: #756c7a;
     color: #fcf6f5;
     border: 0;
-    outline: none;
-    margin-bottom: 4em;
+    outline: none; */
+    padding: 1em 3em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.1);
+    background-color: #333333;
+    border: 2px solid #e60073;
+    color: white;
+    font-family: inherit;
 }  
 
 .submit-btn:hover,
 .submit-btn:focus {
-    background-color: #ffb3c1;
+    background-color: white;
     color: #290a0a;
     font-weight: 700;
+    border: 3px solid solid #333333
 }
 
 textarea {
@@ -260,7 +292,8 @@ textarea {
     padding: 30px;
     margin: 10px;
 }
-.my-work {
+.my-work,
+.my-form {
     width: 1000px;
     max-width: 90%;
     margin: 0 auto;
@@ -306,7 +339,7 @@ textarea {
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
-    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.1)
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.1);
 }
 
 .live-btn:hover,
