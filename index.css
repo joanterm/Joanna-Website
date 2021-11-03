@@ -355,7 +355,17 @@ textarea {
     font-weight: 700;
 }
 
+#status {
+    text-align: center;
+}
 
+/* FOOTER AREA */
+footer {
+    background-color: #333333;
+    padding: 1em 0;
+    text-align: center;
+    color: white;
+}
 
 
 /* MEDIA QUERIES */

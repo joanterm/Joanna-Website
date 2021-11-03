@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link href="index.css" rel="stylesheet">
 </head>
-<body>
+<body>  
+        <!-- NAVIGATION AREA -->
         <header>
             <nav>
                 <ul>
@@ -172,13 +173,19 @@
                 <a href="https://twitter.com/joannaterm"><img src="Images/Twitter48px.png" alt="twitter icon"/></a>
                 <a href="https://github.com/joanterm"><img src="Images/Github48px.png" alt="github icon"/></a>
             </div>
-            <form id="form-collector" action="#" method="POST">
+            <form id="form-collector" action="https://formspree.io/f/mzbylvyd" method="POST">
                 <input name="name" type="text" placeholder="name" required>
                 <input name="email" type="email" placeholder="e-mail" required>
                 <textarea class="message-area" placeholder="message" required></textarea>
                 <button class="submit-btn">Send</button>
+                <p id="status"></p>
             </form>
         </section>
+
+        <!-- FOOTER AREA -->
+        <footer>
+            <p>© Copyright 2021 | Joanna Terman</p>
+        </footer>
 
     <script src="index.js"></script>
     
