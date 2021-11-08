@@ -59,23 +59,16 @@ nav li {
     padding: 0.25em; 
 }
 
-nav button {
+nav a {
     text-decoration: none;
     text-transform: uppercase;
     color: #ff0080;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.25rem;
-
-    border: none;
-	background: none;
-	outline: none;
-    text-decoration: none;
-    font-family: inherit;
-    cursor: pointer;
 } 
 
-nav button:hover,
-nav button:focus {
+nav a:hover,
+nav a:focus {
     color: white;
 }
 
@@ -305,7 +298,6 @@ input,
 textarea {
     border-radius: 5px;
     border: 2px solid #ff0080;
-    /* outline: none; */
     background-color: white;
 }
 
@@ -362,56 +354,6 @@ footer {
     color: white;
 }
 
-/* SCROLL UP BUTTON */
-.my-main {
-	position: relative;
-}
-
-.scrollBtnHide,
-.scrollBtnShow {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	top: 500px;
-	left: 0;
-}
-
-.scrollBtnShow {
-	top: 1100px;
-}
-
-.my-scroll-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: none;
-	background: none;
-	position: fixed;
-	bottom: 30px;
-	right: 35px;
-	background-color: #ff0080;
-	color: white;
-	border-radius: 5px;
-	font-family: inherit;
-	font-size: 20px;
-	padding: 6px 10px;
-	opacity: 0;
-	transform: translateY(100px);
-	transition: all 0.5s ease;
-	cursor: pointer;
-}
-
-.my-scroll-btn.showBtn {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.my-chev {
-	vertical-align: middle;
-	margin-bottom: 2px;
-}
-
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 480px) {
     h2 {
@@ -429,7 +371,7 @@ footer {
     nav li {
         margin: 0;
     }
-    nav button {
+    nav a {
         font-size: 0.75rem;
     }
     nav ul {
@@ -464,7 +406,8 @@ footer {
         margin: 0;
         padding: 0.2em 0.9em;
     }
-    input {
+    input,
+    textarea {
         padding: 1em;
     }
 }
