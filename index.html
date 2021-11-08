@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joanna Terman | Web Developer</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <link href="index.css" rel="stylesheet">
 </head>
@@ -13,9 +15,9 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="nav-about-me">About</button></li>
+					<li><button id="nav-work">Work</button></li>
+					<li><button id="nav-contact">Contact</button></li>
                 </ul>
             </nav>
             <div class="name-area">
@@ -23,170 +25,181 @@
                 <p class="my-title">Front-End Web Developer</p>
             </div>
         </header>
-    
-        <!-- ABOUT ME SECTION -->
-        <section class="about-me" id="about-me">
-            <div class="about-me-info">
-                <h2>Hello.</h2>
-                <p>Thank you for being here.</p>
-                <br>
-                <p>My name is Joanna and I am a Web Developer. My journey in the tech industry started more as a hobby, and with time as I started spending more time hitting my fingers on the keyboard, it slowly transitioned into a full time journey.</p>
-                <br>
-                <p>I consider myself a person you can rely on and who will always have your best interest in mind. I am a great team player and I have worked in a team environment for many years. I have an extensive background in the health care industry, where I also got to develop strong communication and customer service skills.</p>
-                <br>
-                <p>I practice mindfulness and positive affirmations. I enjoy hot tea, long winter evenings, funny movies, and working with APIs.</p>
-                <br>
-                <p>My current set of skills includes:</p>
-            </div>
-            
-            <div class="skill-icons">
-                <div class="icon">
-                    <img src="Images/html-5-100.png" class="img-icon" alt="html-icon"/>
-                    <p>HTML</p>
+        
+        <!-- MAIN CONTENT -->
+        <main class="my-main">  
+            <!-- ABOUT ME SECTION -->
+            <section class="about-me" id="about-me">
+                <div class="about-me-info">
+                    <h2>Hello.</h2>
+                    <p>Thank you for being here.</p>
+                    <br>
+                    <p>My name is Joanna and I am a Web Developer. My journey in the tech industry started more as a hobby, and with time as I started spending more time hitting my fingers on the keyboard, it slowly transitioned into a full time journey.</p>
+                    <br>
+                    <p>I consider myself a person you can rely on and who will always have your best interest in mind. I am a great team player and I have worked in a team environment for many years. I have an extensive background in the health care industry, where I also got to develop strong communication and customer service skills.</p>
+                    <br>
+                    <p>I practice mindfulness and positive affirmations. I enjoy hot tea, long winter evenings, funny movies, and working with APIs.</p>
+                    <br>
+                    <p>My current set of skills includes:</p>
                 </div>
-                <div class="icon">
-                    <img src="Images/css3-100.png" class="img-icon"alt="css-icon"/>
-                    <p>CSS</p>
-                </div>
-                <div class="icon">
-                    <img src="Images/javascript-100.png" class="img-icon" alt="javascript-icon"/>
-                    <p>JavaScript</p>
-                </div>
-                <div class="icon">
-                    <img src="Images/react-native-100.png" class="img-icon" alt="react-icon"/>
-                    <p>React</p>
-                </div>
-                <div class="icon">
-                    <img src="Images/rest-api-100.png" class="img-icon" alt="rest-api-icon"/>
-                    <p>API</p>
-                </div>
-                <div class="icon">
-                    <img src="Images/git-100.png" class="img-icon" alt="git-icon"/>
-                    <p>GIT</p>
-                </div>
-                <div class="icon">
-                    <img src="Images/responsive-100.png" class="img-icon" alt="responsive-design-icon"/>
-                    <p>Responsive Design</p>
-                </div>
-                <div class="icon">
-                    <img src="Images/wordpress-100.png" class="img-icon" alt="wordpress-icon"/>
-                    <p>WordPress</p>
-                </div>
-                <div class="icon">
-                    <img src="Images/google-analytics-logo-100.png" class="img-icon" alt="google-analystic-icon"/>
-                    <p>Google Analytics</p>
-                </div>
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><defs><linearGradient x1="0" y1="-21.333" y2="85.333" id="A" x2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#333333" offset="0%"/><stop stop-color="#333333" offset="100%"/></linearGradient></defs><path d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z" fill="url(#A)" fill-rule="evenodd" alt="tailwindcss-icon"/></svg>
-                    <p>TailwindCSS</p>
-                </div>
-            </div>              
-        </section>
+                
+                <div class="skill-icons">
+                    <div class="icon">
+                        <img src="Images/html-5-100.png" class="img-icon" alt="html-icon"/>
+                        <p>HTML</p>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/css3-100.png" class="img-icon"alt="css-icon"/>
+                        <p>CSS</p>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/javascript-100.png" class="img-icon" alt="javascript-icon"/>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/react-native-100.png" class="img-icon" alt="react-icon"/>
+                        <p>React</p>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/rest-api-100.png" class="img-icon" alt="rest-api-icon"/>
+                        <p>API</p>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/git-100.png" class="img-icon" alt="git-icon"/>
+                        <p>GIT</p>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/responsive-100.png" class="img-icon" alt="responsive-design-icon"/>
+                        <p>Responsive Design</p>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/wordpress-100.png" class="img-icon" alt="wordpress-icon"/>
+                        <p>WordPress</p>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/google-analytics-logo-100.png" class="img-icon" alt="google-analystic-icon"/>
+                        <p>Google Analytics</p>
+                    </div>
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><defs><linearGradient x1="0" y1="-21.333" y2="85.333" id="A" x2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#333333" offset="0%"/><stop stop-color="#333333" offset="100%"/></linearGradient></defs><path d="M16 25.6c2.133-8.533 7.467-12.8 16-12.8 12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8C61.867 27.733 56.533 32 48 32c-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8zM0 44.8C2.133 36.267 7.467 32 16 32c12.8 0 14.4 9.6 20.8 11.2 4.267 1.067 8-.533 11.2-4.8-2.133 8.533-7.467 12.8-16 12.8-12.8 0-14.4-9.6-20.8-11.2-4.267-1.067-8 .533-11.2 4.8z" fill="url(#A)" fill-rule="evenodd" alt="tailwindcss-icon"/></svg>
+                        <p>TailwindCSS</p>
+                    </div>
+                </div>              
+            </section>
 
-        <!-- MY WORK AREA -->
-        <section class="work" id="work">
-            <h2>My work.</h2>
-            <!-- CODED PROJECTS SECTION -->
-            <div class="work-info">
-                <h3>Coded Projects</h3>
-                <p>These are some of my favorite mock projects that I coded in my spare time. Working with APIs is something I really enjoy doing, and these projects reflect that. For a full list of my work, please follow me on GitHub.</p>
-            </div>
-            <div class="projects-section">
-                <div class="project-card">
-                    <img src="Images/cocktail-recipe-img.png" class="project-img"/>
-                    <p class="project-name">Cocktail Recipe</p>
-                    <p class="project-description">A mock app created to allow a user to access a random cocktail recipe from an API. It also lists three favorite recipes in a dropdown menu.</p>
-                    <div class="stack-area">
-                        <p class="stack-description">HTML</p>
-                        <p class="stack-description">JavaScript</p>
-                        <p class="stack-description">TailwindCSS</p>
-                        <p class="stack-description">API</p>
+            <!-- MY WORK AREA -->
+            <section class="work" id="work">
+                <h2>My work.</h2>
+                <!-- CODED PROJECTS SECTION -->
+                <div class="work-info">
+                    <h3>Coded Projects</h3>
+                    <p>These are some of my favorite mock projects that I coded in my spare time. Working with APIs is something I really enjoy doing, and these projects reflect that. For a full list of my work, please follow me on GitHub.</p>
+                </div>
+                <div class="projects-section">
+                    <div class="project-card">
+                        <img src="Images/cocktail-recipe-img.png" class="project-img" alt="image-of-cocktail-website"/>
+                        <p class="project-name">Cocktail Recipe</p>
+                        <p class="project-description">A mock app created to allow a user to access a random cocktail recipe from an API. It also lists three favorite recipes in a dropdown menu.</p>
+                        <div class="stack-area">
+                            <p class="stack-description">HTML</p>
+                            <p class="stack-description">JavaScript</p>
+                            <p class="stack-description">TailwindCSS</p>
+                            <p class="stack-description">API</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://joanterm.github.io/Cocktail-Recipe/" class="live-btn" aria-label="live-site-button">Live</a>
+                            <a href="https://github.com/joanterm/Cocktail-Recipe" class="code-btn" aria-label="full-code-site-button">Code</a>
+                        </div>
                     </div>
-                    <div class="project-buttons">
-                        <a href="https://joanterm.github.io/Cocktail-Recipe/" class="live-btn" aria-label="live-site-button">Live</a>
-                        <a href="https://github.com/joanterm/Cocktail-Recipe" class="code-btn" aria-label="full-code-site-button">Code</a>
+                    <div class="project-card">
+                        <img src="Images/nailpolish-img.png" class="project-img" alt="image-of-nail-polish-website"/>
+                        <p class="project-name">Nail Polish Finder</p>
+                        <p class="project-description">A mock website designed to allow a user to search for their favorite brand of nail polish using an API. It also features a Swiper carousel and a GSAP animation.</p>
+                        <div class="stack-area">
+                            <p class="stack-description">HTML</p>
+                            <p class="stack-description">JavaScript</p>
+                            <p class="stack-description">TailwindCSS</p>
+                            <p class="stack-description">API</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://joanterm.github.io/Nail-Polish-Finder-API/" class="live-btn" aria-label="live-site-button">Live</a>
+                            <a href="https://github.com/joanterm/Nail-Polish-Finder-API" class="code-btn" aria-label="full-code-site-button">Code</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="Images/nailpolish-img.png" class="project-img"/>
-                    <p class="project-name">Nail Polish Finder</p>
-                    <p class="project-description">A mock website designed to allow a user to search for their favorite brand of nail polish using an API. It also features a Swiper carousel and a GSAP animation.</p>
-                    <div class="stack-area">
-                        <p class="stack-description">HTML</p>
-                        <p class="stack-description">JavaScript</p>
-                        <p class="stack-description">TailwindCSS</p>
-                        <p class="stack-description">API</p>
+                <!-- WORDPRESS PROJECTS SECTION -->
+                <div class="work-info">
+                    <h3>WordPress Projects</h3>
+                    <p>I am also experienced working with real-life clients using WordPress. It gives me a huge pleasure knowing my clients are satisfied with the outcome of my work, and that my websites are being visited by real people every day.</p>
+                </div>
+                <div class="projects-section">
+                    <div class="project-card">
+                        <img src="Images/jmgpictures-img.png" class="project-img" alt="photographer-website-image"/>
+                        <p class="project-name">JMGpictures</p>
+                        <p class="project-description">A one-page portfolio website created for a local photographer.</p>
+                        <div class="project-buttons" id="wordpress-project-buttons">
+                            <a href="https://jmgpictures.com/" class="live-btn" aria-label="live-site-button">Live</a>
+                        </div>
                     </div>
-                    <div class="project-buttons">
-                        <a href="https://joanterm.github.io/Nail-Polish-Finder-API/" class="live-btn" aria-label="live-site-button">Live</a>
-                        <a href="https://github.com/joanterm/Nail-Polish-Finder-API" class="code-btn" aria-label="full-code-site-button">Code</a>
+                    <div class="project-card">
+                        <img src="Images/mindfullyyou-img.jpg" class="project-img" alt="mindfulness-coach-website-image"/>
+                        <p class="project-name">Mindfully You</p>
+                        <p class="project-description">A one-page business website designed for a Mindfulness Coach.</p>
+                        <div class="project-buttons" id="wordpress-project-buttons">
+                            <a href="https://mindfully-you.co.uk/" class="live-btn" aria-label="live-site-button">Live</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="Images/techeo-img.png" class="project-img" alt="techeo-company-website-image"/>
+                        <p class="project-name">Techeo</p>
+                        <p class="project-description">A multi-page website for a professional web design and development business.</p>
+                        <div class="project-buttons" id="wordpress-project-buttons">
+                            <a href="https://techeo.co.uk/" class="live-btn" aria-label="live-site-button">Live</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="Images/doglistener-img.png" class="project-img" alt="doglistener-website"/>
+                        <p class="project-name">Dog Listener</p>
+                        <p class="project-description">I helped with the design of Stan Rawlinson's (the UK’s leading Dog Behaviorist) current website.</p>
+                        <div class="project-buttons" id="wordpress-project-buttons">
+                            <a href="https://www.doglistener.co.uk/" class="live-btn" aria-label="live-site-button">Live</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- WORDPRESS PROJECTS SECTION -->
-            <div class="work-info">
-                <h3>WordPress Projects</h3>
-                <p>I am also experienced working with real-life clients using WordPress. It gives me a huge pleasure knowing my clients are satisfied with the outcome of my work, and that my websites are being visited by real people every day.</p>
-            </div>
-            <div class="projects-section">
-                <div class="project-card">
-                    <img src="Images/jmgpictures-img.png" class="project-img" alt="photographer-website-image"/>
-                    <p class="project-name">JMGpictures</p>
-                    <p class="project-description">A one-page portfolio website created for a local photographer.</p>
-                    <div class="project-buttons" id="wordpress-project-buttons">
-                        <a href="https://jmgpictures.com/" class="live-btn" aria-label="live-site-button">Live</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="Images/mindfullyyou-img.jpg" class="project-img" alt="mindfulness-coach-website-image"/>
-                    <p class="project-name">Mindfully You</p>
-                    <p class="project-description">A one-page business website designed for a Mindfulness Coach.</p>
-                    <div class="project-buttons" id="wordpress-project-buttons">
-                        <a href="https://mindfully-you.co.uk/" class="live-btn" aria-label="live-site-button">Live</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="Images/techeo-img.png" class="project-img" alt="techeo-company-website-image"/>
-                    <p class="project-name">Techeo</p>
-                    <p class="project-description">A multi-page website for a professional web design and development business.</p>
-                    <div class="project-buttons" id="wordpress-project-buttons">
-                        <a href="https://techeo.co.uk/" class="live-btn" aria-label="live-site-button">Live</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="Images/doglistener-img.png" class="project-img" alt="doglistener-website"/>
-                    <p class="project-name">Dog Listener</p>
-                    <p class="project-description">I helped with the design of Stan Rawlinson's (the UK’s leading Dog Behaviorist) current website.</p>
-                    <div class="project-buttons" id="wordpress-project-buttons">
-                        <a href="https://www.doglistener.co.uk/" class="live-btn" aria-label="live-site-button">Live</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- FORM AREA -->
-        <section class="form" id="contact">
-            <h2>Contact.</h2>
-            <p class="form-text-top">Let's stay in touch.</p>
-            <p class="form-text-bottom">I am most active on Twitter, so feel free to reach out.</p>
-            <div class="smedia-icons">
-                <a href="https://twitter.com/joannaterm"><img src="Images/Twitter48px.png" alt="twitter icon"/></a>
-                <a href="https://github.com/joanterm"><img src="Images/Github48px.png" alt="github icon"/></a>
-            </div>
-            <form id="form-collector" action="https://formspree.io/f/mzbylvyd" method="POST">
-                <input name="name" type="text" placeholder="name" required>
-                <input name="email" type="email" placeholder="e-mail" required>
-                <textarea class="message-area" placeholder="message" required></textarea>
-                <button class="submit-btn">Send</button>
-                <p id="status"></p>
-            </form>
-        </section>
+            <!-- FORM AREA -->
+            <section class="form" id="contact">
+                <h2>Contact.</h2>
+                <p class="form-text-top">Let's stay in touch.</p>
+                <p class="form-text-bottom">I am most active on Twitter, so feel free to reach out.</p>
+                <div class="smedia-icons">
+                    <a href="https://twitter.com/joannaterm"><img src="Images/Twitter48px.png" alt="twitter icon"/></a>
+                    <a href="https://github.com/joanterm"><img src="Images/Github48px.png" alt="github icon"/></a>
+                </div>
+                <form id="form-collector" action="https://formspree.io/f/mzbylvyd" method="POST">
+                    <input name="name" type="text" placeholder="name" required>
+                    <input name="email" type="email" placeholder="e-mail" required>
+                    <textarea class="message-area" placeholder="message" required></textarea>
+                    <button class="submit-btn">Send</button>
+                    <p id="status"></p>
+                </form>
+            </section>
+
+            <!-- SCROLL UP BUTTON  -->
+            <button class="my-scroll-btn" id="scrollBtn">
+                <i class="my-chev fas fa-chevron-up"></i>
+            </button>
+			<div class="scrollBtnHide" id="scrollBtnHide"></div>
+			<div class="scrollBtnShow" id="scrollBtnShow"></div>
+        </main>
 
         <!-- FOOTER AREA -->
         <footer>
             <p>© Copyright 2021 | Joanna Terman</p>
         </footer>
 
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js"></script>    
     <script src="index.js"></script>
     
 </body>

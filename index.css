@@ -8,12 +8,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #290a0a;
-
 }
 
 /* TYPOGRAPHY */
 h2 {
-    border-left: 10px solid #e60073;
+    border-left: 10px solid #ff0080;
     padding-left: 10px;
     margin-bottom: 2em;
     font-size: 2rem;
@@ -30,13 +29,11 @@ p {
 
 /* HEADER */
 header {
-    /* background-image: linear-gradient(rgba(226, 217, 217, 0.1),rgba(192, 32, 125, 0.5)), url("Images/evieshaffer.jpg"); */
     background-size: cover;
     background-position: center;
     min-height: 90vh;
-    background-attachment: fixed;
-    background-image: url("https://images.unsplash.com/photo-1610303871783-491dc6d0a165?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
-
+    background-attachment: scroll;
+    background-image: url("Images/main-photo.jpg");
 }
 
 /* NAVIGATION SECTION */
@@ -50,15 +47,6 @@ nav {
     margin: 0 auto;
 }
 
-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.25rem;
-    color: #e60073;
-    font-weight: 500;
-}
-
 nav ul {
     display: flex;
     justify-content: flex-end;
@@ -67,23 +55,29 @@ nav ul {
 
 nav li {
     margin-left: 5em;
-    border-bottom: 2px solid #e60073;
+    border-bottom: 3px solid #ff0080;
     padding: 0.25em; 
 }
 
-nav a {
+nav button {
     text-decoration: none;
     text-transform: uppercase;
-    color: #e60073;
+    color: #ff0080;
     font-weight: 500;
     font-size: 1.25rem;
+
+    border: none;
+	background: none;
+	outline: none;
+    text-decoration: none;
+    font-family: inherit;
+    cursor: pointer;
 } 
 
-nav a:hover,
-nav a:focus {
+nav button:hover,
+nav button:focus {
     color: white;
 }
-
 
 /* MY NAME AREA */
 .name-area {
@@ -105,9 +99,9 @@ nav a:focus {
 }
 
 .name-area h1 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 4rem;
-    color: #e60073;
+    color: #ff0080;
     text-shadow: 2px 4px 3px rgba(226, 216, 216, 0.2);
 }
 
@@ -230,7 +224,7 @@ nav a:focus {
 
 .live-btn {
     margin-right: 0.5em;
-    background-color: #e60073;
+    background-color: #ff0080;
     color: white;
 }
 
@@ -241,7 +235,7 @@ nav a:focus {
 
 .live-btn,
 .code-btn {
-    border: 2px solid #e60073;
+    border: 2px solid #ff0080;
     padding: 0.5em 2em;
     border-radius: 5px;
     cursor: pointer;
@@ -249,6 +243,7 @@ nav a:focus {
     font-weight: 500;
     box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.1);
 }
+
 
 .live-btn:hover,
 .live-btn:focus,
@@ -308,10 +303,10 @@ form {
 
 input,
 textarea {
-    border-radius: 50px;
-    border: 0;
-    outline: none;
-    background-color:#e60073;
+    border-radius: 5px;
+    border: 2px solid #ff0080;
+    /* outline: none; */
+    background-color: white;
 }
 
 input {
@@ -331,7 +326,7 @@ textarea {
 }
 
 ::placeholder {
-    color: white !important;
+    color: #ff0080 !important;
 }
 
 .submit-btn {
@@ -350,7 +345,7 @@ textarea {
 
 .submit-btn:hover,
 .submit-btn:focus {
-    background-color: #e60073;
+    background-color: #ff0080;
     color: white;
     font-weight: 700;
 }
@@ -365,6 +360,55 @@ footer {
     padding: 1em 0;
     text-align: center;
     color: white;
+}
+
+/* SCROLL UP BUTTON */
+.my-main {
+	position: relative;
+}
+
+.scrollBtnHide,
+.scrollBtnShow {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	top: 500px;
+	left: 0;
+}
+
+.scrollBtnShow {
+	top: 1100px;
+}
+
+.my-scroll-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background: none;
+	position: fixed;
+	bottom: 30px;
+	right: 35px;
+	background-color: #ff0080;
+	color: white;
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 6px 10px;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+
+.my-scroll-btn.showBtn {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.my-chev {
+	vertical-align: middle;
+	margin-bottom: 2px;
 }
 
 
@@ -385,7 +429,7 @@ footer {
     nav li {
         margin: 0;
     }
-    nav a {
+    nav button {
         font-size: 0.75rem;
     }
     nav ul {
@@ -413,14 +457,15 @@ footer {
     .projects-section {
         width: 100%;
     }
-    .live-btn,
     .code-btn {
         padding: 0.2em 0.5em;
     }
     .live-btn {
         margin: 0;
+        padding: 0.2em 0.9em;
     }
     input {
         padding: 1em;
     }
 }
+
